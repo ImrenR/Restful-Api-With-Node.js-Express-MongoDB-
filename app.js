@@ -8,7 +8,7 @@ require("dotenv").config();
 // Import routes
 
 const postsRoute = require ("./routes/posts");
-
+app.use(express.json()); // Middleware to parse JSON request body
 app.use('/posts', postsRoute);
 
 
