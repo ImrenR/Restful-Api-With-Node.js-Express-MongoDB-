@@ -3,11 +3,11 @@ const mongoose =require ('mongoose');
 const PostSchema = mongoose.Schema({
   title: {
     type: String,
-    required: true
+    required: false
   },
   description: {
     type: String,
-    required: true
+    required: false
     },
   date: {
     type: Date,
