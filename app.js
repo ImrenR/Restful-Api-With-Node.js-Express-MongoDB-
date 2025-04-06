@@ -3,6 +3,7 @@
 const express = require ("express");
 const app = express();
 const mongoose = require ("mongoose");
+const bodyParser = require ("body-parser");
 require("dotenv").config();
 const PORT = process.env.PORT || 8000;
 
@@ -11,6 +12,7 @@ const PORT = process.env.PORT || 8000;
 const postsRoute = require ("./routes/posts");
 app.use(express.json()); // Middleware to parse JSON request body
 app.use('/posts', postsRoute);
+app.use(bodyParser.json())
 
 
 // CONNECT TO DB
