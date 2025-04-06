@@ -5,9 +5,14 @@ const app = express();
 const mongoose = require ("mongoose");
 require("dotenv").config();
 
+// Import routes
+
+const postsRoute = require ("./routes/posts");
+
+app.use('/posts', postsRoute);
+
 
 // CONNECT TO DB
-
 // async function startServer() {
 //   try {
 //  await mongoose.connect("mongodb+srv://imrenrahbay:cfI0CJJjbUyVG9uj@imrenr.citbvbk.mongodb.net/") ;
