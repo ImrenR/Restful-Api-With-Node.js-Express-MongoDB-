@@ -3,14 +3,7 @@
 const express = require ("express");
 const app = express();
 const mongoose = require ("mongoose");
-
-
-// ROUTES
-app.get('/', (req,res)=>{
-
-res.send("We are on home")
-
-});
+require("dotenv").config();
 
 
 // CONNECT TO DB
@@ -25,7 +18,7 @@ res.send("We are on home")
 // }
 // startServer();
 // 0R :
-mongoose.connect ("mongodb+srv://imrenrahbay:cfI0CJJjbUyVG9uj@imrenr.citbvbk.mongodb.net/")
+mongoose.connect (process.env.DB_CONNECTION)
 .then(()=> {
   console.log('Connected to DB!');
 
