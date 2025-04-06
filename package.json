@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "repository": "git+https://github.com/ImrenR/Restful-Api-With-Node.js-Express-MongoDB-.git",
   "keywords": [],
@@ -14,6 +14,7 @@
   "homepage": "https://github.com/ImrenR/Restful-Api-With-Node.js-Express-MongoDB-#readme",
   "dependencies": {
     "express": "^5.1.0",
+    "mongoose": "^8.13.2",
     "nodemon": "^3.1.9"
   }
 }
